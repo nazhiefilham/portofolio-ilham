@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">Portofolio.</a>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+
+      <ul id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="bars-animation">
+      <div class="bars" style="--i: 6"></div>
+      <div class="bars" style="--i: 5"></div>
+      <div class="bars" style="--i: 4"></div>
+      <div class="bars" style="--i: 3"></div>
+      <div class="bars" style="--i: 2"></div>
+      <div class="bars" style="--i: 1"></div>
+    </div>
+
+    <section class="home" id="home">
+      <div class="home-info">
+        <h1>Nazhief Ilham</h1>
+        <h2>SMKN 4 Bandung</h2>
+        <h3>
+          مَنْ جَدَّ وَجَدَ
+          <p>"Barang siapa yang bersungguh sungguh pasti dia akan berhasil"</p>
+        </h3>
+
+        <div class="btn-sci">
+          <a href="Nazhief Ilham CV 2025.pdf" download class="btn">Download CV</a>
+          <div class="sci">
+            <a href="https://www.linkedin.com/in/nazhief-ilham-22a134378/"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/nazhiefilham"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/nzhfilhmmm_/"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="ilham.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-info">
+        <h1>About Me</h1>
+        <p>
+          Halo! Nama saya <strong>Nazhief Ilham</strong>, seorang siswa <strong>SMK Negeri 4 Bandung</strong> jurusan <strong> Rekayasa Perangkat Lunak (RPL) </strong>. Saya memiliki minat di bidang pemrograman, terutama dalam pengembangan
+          website di bagian <strong>Front End</strong>.
+        </p>
+        <p>
+          Saya telah mempelajari berbagai bahasa pemrograman seperti <strong>HTML , CSS, Python dan JavaScript.</strong> Saya juga telah mempelajari mengenai framework <strong>Laravel</strong>. Saya senang bisa berada di bidang ini. Dan
+          saya akan terus semangat belajar untuk mengasah keterampilan.
+        </p>
+        <p>Cita cita saya adalah menjadi seorang web developer profesional. Dan bisa menciptakan website yang bisa digunakan oleh banyak orang.</p>
+      </div>
+    </section>
+
+    <section class="project" id="project">
+      <div class="project-info">
+        <h1 class="project-tittle">My Project</h1>
+        <div class="project-img">
+          <a href="https://github.com/nazhiefilham/laravel-ilham" class="project-card">
+            <img src="project/Screenshot 2025-07-25 093046.png" />
+          </a>
+          <a href="https://github.com/nazhiefilham/belajar-javascript" class="project-card">
+            <img src="project/Screenshot 2025-07-25 093103.png" />
+          </a>
+          <a href="https://github.com/nazhiefilham/KK4_XIRPL" class="project-card">
+            <img src="project/Screenshot 2025-07-25 093055.png" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <main class="scroll-area">
+      <section class="contact" id="contact">
+        <div class="contact-info">
+          <h1>Contact Me!</h1>
+          <form action="https://formspree.io/f/xqalbayb" method="POST">
+            <label>
+              Your email :
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Your message :
+              <textarea name="message"></textarea>
+            </label>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <p>
+          <center><strong>Follow Us</strong></center>
+        </p>
+        <div class="icon-wrapper">
+          <a href="https://wa.me/6285175059641" class="circle-icon"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://discord.com/users/1086270397600763944" class="circle-icon"><i class="bx bxl-discord-alt"></i></a>
+          <a href="https://steamcommunity.com/profiles/76561199602494424/" class="circle-icon"><i class="bx bxl-steam"></i></a>
+        </div>
+        <p>© 2025 Nazhief. All rights reserved.</p>
+      </footer>
+    </main>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
